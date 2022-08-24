@@ -37,6 +37,10 @@
     color: yellow;
 }
 
+#nav a:hover svg[class="bi bi-pencil"]{
+    fill:yellow;
+}
+
 /* div tags inside navbar specific*/
 #nav>div:first-child>div:last-of-type {
     border-bottom: 1px solid #d3d3d3;
@@ -80,8 +84,12 @@
     width: 20%;
 }
 
-#nav div a>svg{
+#nav div a>svg {
     fill: white;
+}
+
+#nav div a>svg:hover {
+    fill: yellow;
 }
 
 /* scroll bar */
@@ -102,4 +110,72 @@
 #scrollToTop>svg:hover {
     background-color: #b43300;
     cursor: pointer;
+}
+
+/* dropdown div section */
+
+#dropDown{
+    fill:white;
+    stroke:white;
+}
+#dropDown:hover{
+    fill:yellow;
+    stroke:yellow;
+    cursor: pointer;
+}
+
+#nav>span:first-of-type {
+    position: relative;
+    width: auto;
+    /* padding: 0px 10%; */
+}
+
+#dropDownSec {
+    display: none;
+    justify-content: space-between;
+    box-shadow: 0px 7px 10px 0px rgb(192, 192, 192);
+    margin-top: 0px;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+}
+
+#dropDownSec>ul {
+    list-style-type: none;
+    width: 20%;
+}
+
+#dropDownSec>ul>li {
+    font-size: 15px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+#dropDownSec li a {
+    color: grey;
+}
+
+#dropDownSec li a:hover {
+    color: #a00606;
+}
+
+/* search box */
+#searchA{
+    position: relative;
+}
+
+#searchA:hover>#search{
+    display: block;
+}
+
+#search{
+    display:none;
+    position: absolute;
+    border-radius: 5px;
+    right: 100%;
+    bottom: -8px;
+    height: auto;
+    font: 17px;
+    padding: 12px 5px;
+    min-width: 200px;
 }

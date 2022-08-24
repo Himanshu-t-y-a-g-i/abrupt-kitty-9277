@@ -128,5 +128,36 @@
         scrollTop();
     })
 
+    // main menu drop down
+
+    let showDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "flex";
+    }
+
+    let hideDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "none";
+    }
+
+    document.getElementById("dropDown").addEventListener("click",() => {
+        showDropDown();
+    })
+
+    document.getElementById("dropDown").addEventListener("dblclick",() => {
+        hideDropDown();
+    })
+
+    // search functionality
+    let search = document.getElementById("search");
+
+    let submitted = () => {
+        console.log("submitted");
+    }
+
+    search.addEventListener("search",()=>{
+        submitted();
+    })
+
     // navbar and scroll to top end
 </script>
