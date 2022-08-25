@@ -12,4 +12,4 @@ let dataFunc = async () => {
         console.log("Error: ",error);
     }
 }
-dataFunc();
+// dataFunc();
