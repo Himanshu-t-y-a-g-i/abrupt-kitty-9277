@@ -9,8 +9,7 @@
     width: 100%;
     /* border: 2px solid red; */
     display: flex;
-   background-color: black;
-   margin-top: 30px;
+background-color: black;
 }
 .box{
     width: 200px;
