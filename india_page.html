@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India</title>
+    <link rel="icon" href="./images/cirlce favi-icon.png" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/india_page.css" />
+  </head>
+  <body>
+    <nav id="nav"></nav>
+    <div id="main_container">
+      <!-- title and region div -->
+      <div class="p-first">
+        <p>News/India</p>
+      </div>
+      <div class="h_first">
+        <h1>India</h1>
+      </div>
+      <!-- main news div -->
+      <div class="news_div">
+        <div class="sub_news">1</div>
+        <div class="sub_news">2</div>
+        <div class="sub_news">3</div>
+      </div>
+      <!-- Side  news div -->
+      <div class="child_div">
+        <div class="span">
+          <div><span>READ THIS</span></div>
+          <div></div>
+        </div>
+        <div class="side_div">1</div>
+        <div class="side_div">2</div>
+        <div class="side_div">3</div>
+        <div class="side_div">4</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/india.js" type="module">
+  let scroller = document.getElementById("scrollToTop");
+
+  let scrolled = () => {
+      let pos = document.documentElement.scrollTop;
+      let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let b = Math.round((pos * 100) / a);
+      if (b > 15) {
+          scroller.style.display = "block";
+      } else {
+          scroller.style.display = "none";
+      }
+  }
+
+  window.addEventListener("scroll", () => {
+      scrolled();
+  })
+
+  window.addEventListener("load", () => {
+      scrolled();
+  })
+
+  let scrollTop = () => {
+      window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+      });
+  }
+
+  document.querySelector("#scrollToTop").addEventListener("click", () => {
+      scrollTop();
+  })
+
+  // main menu drop down
+
+  let showDropDown = () => {
+      let dropDown = document.getElementById("dropDownSec");
+      dropDown.style.display = "flex";
+  }
+
+  let hideDropDown = () => {
+      let dropDown = document.getElementById("dropDownSec");
+      dropDown.style.display = "none";
+  }
+
+  document.getElementById("dropDown").addEventListener("click",() => {
+      showDropDown();
+  })
+
+  document.getElementById("dropDown").addEventListener("dblclick",() => {
+      hideDropDown();
+  })
+
+  // search functionality
+  let search = document.getElementById("search");
+
+  let submitted = () => {
+      console.log("submitted");
+  }
+
+  search.addEventListener("search",()=>{
+      submitted();
+  })
+</script>
