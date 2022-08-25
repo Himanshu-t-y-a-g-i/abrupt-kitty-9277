@@ -1,6 +1,6 @@
 let footer = () => {
     return `
-    <div id="cont">
+    <div id="con">
     <div class="box">
         <h3>PUBLICATION</h3>
             <a href="">Buisness Today</a><br>
