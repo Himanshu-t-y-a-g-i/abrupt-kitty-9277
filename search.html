@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lastest News</title>
+    <title>Search Results</title>
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="./images/cirlce favi-icon.png">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/search.css">
 </head>
-
 <body>
     <nav id="nav"></nav>
-    <div id="mainBody">
-        
-    </div>
+    <div id="sRes"></div>
     <div id="footer"></div>
 </body>
-
 </html>
-
-<script src="./scripts/index.js" type="module"></script>
 <script type="module">
 
     // Navbar and scroll to top init
@@ -113,3 +108,4 @@
     document.getElementById("footer").innerHTML=footer();
     // footer section end
 </script>
+<script src="./scripts/search.js"></script>
