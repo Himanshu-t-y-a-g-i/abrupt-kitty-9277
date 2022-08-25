@@ -1,5 +1,5 @@
 let navbar = () => {
-    return `<div>
+  return `<div>
     <div>
         <a href="./index.html">IndiaToday</a>
         <a href="https://malayalam.indiatoday.in/">Malyalam</a>
@@ -37,9 +37,9 @@ let navbar = () => {
                         d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
                 </svg>
                 MY FEED</a>
-            <a href="">INDIA</a>
-            <a href="">WORLD</a>
-            <a href="">BUSINESS</a>
+            <a href="./india_page.html">INDIA</a>
+            <a href="./world_page.html">WORLD</a>
+            <a href="./business.html">BUSINESS</a>
             <a href="">TECH</a>
             <a href="">MOVIES</a>
             <a href="">SPORTS</a>
@@ -146,7 +146,7 @@ let navbar = () => {
         <path fill-rule="evenodd"
             d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
     </svg>
-</span>`
-}
+</span>`;
+};
 
 export default navbar;
