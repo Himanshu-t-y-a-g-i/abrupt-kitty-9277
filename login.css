@@ -54,7 +54,29 @@ font-weight: bold;
     margin: auto;
     
 }
-#body>h3{
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+h1+div{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+span>a{
+color:  red;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+}
+div>a{
+    color: #278CD3;
+    font-weight: bold;
+    text-decoration: none;
+}
+h3{
     text-align: center;
 }
 #logo{
@@ -80,12 +102,12 @@ option{
     color:black;
 }
 input{
-    width: 270px;
+    width: 540px;
     height: 40px;
    color:black;
    font-size: 16px;
     border: 1px solid rgb(114, 106, 106);
-    margin-left: 15px;
+   
     margin-top: 15px;
 }
 .space{
@@ -119,6 +141,7 @@ button{
     border: 1px solid #278CD3;
     border-radius: 5px;
     background: linear-gradient(0deg, rgb(91, 82, 219) 50%,  rgba(40, 141, 211, 1) 20% 100%);
+ 
 }
 .box{
     display: flex;
@@ -126,7 +149,7 @@ button{
     margin-top: 20px;
 }
 #name{
-    margin-left: 310px;
+    margin-left: 25px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -191,4 +214,25 @@ button{
     margin-top: -20px;
     color: red;
     
+}
+.env{
+    width: 40px;
+  
+    height:42px;
+    margin-top: 15px;
+    border-left:1px solid gray ;
+    border-top:1px solid gray  ;
+    border-bottom: 1px solid gray ;
+    
+}
+
+#mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#passbox123{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
