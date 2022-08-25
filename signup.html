@@ -18,7 +18,7 @@
     </div>
 </div>
     <div id="body">
-        <div id="hide">
+        <div id="hide"> 
             
         </div>
     <h3>Sign Up by</h3>
@@ -289,9 +289,13 @@
     <p id="name"></p>
     <input type="text" id="email_mob" placeholder=" Enter your Email or Mobile" value="">
     
-    <input type="password" id="password" placeholder="*Password" value="">
+    <input type="password" id="password" placeholder="*Password" onfocus="show()"  value="">
    
     <span class="field"><p id="email1"></p><p id="pass"></p></span>
+    <div id="passbox">
+        <p id="lower">1 Lower case character (a-z)</p>
+        <p id="number">1 Number character (0-9)</p>
+        <p id="length">6-14 character</p></div>
      <p id="sso"></p>
      <input type="checkbox" class="checkbox" id="checksso1"><span>I agree to the SSO login privacy terms and I warrant that I am above 16 years of age. *</span>
      <input type="checkbox" class="checkbox" id="checksso2"><span>I agree to the processing of my personal information for profiling such as My Credits, Follow activity , Personalised recommendations and Advertisements.</span><br>

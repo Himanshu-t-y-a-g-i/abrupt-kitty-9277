@@ -3,6 +3,40 @@ function showname(){
     let name1=document.getElementById('name');
     name1.innerText="Full name field is required";
     name1.style.color="red"
+    
+}
+document.getElementById('passbox').style.display="none";
+
+function show(){
+    document.getElementById('passbox').style.display="block";
+    document.getElementById('lower').style.color="red";
+    document.getElementById('number').style.color="red";
+    document.getElementById('length').style.color="red";
+}
+
+
+document.getElementById('password').onblur=function(){
+    document.getElementById('passbox').style.display="none";
+}
+document.getElementById('password').onkeyup=function(){
+    var lowercase=/[a-z]/g;
+    var number=/[0-9]/g;
+    
+    if(document.getElementById('password').value.match(lowercase)){
+        document.getElementById('lower').style.color="green";
+    }else{
+        document.getElementById('lower').style.color="red";
+    }
+    if(document.getElementById('password').value.match(number)){
+        document.getElementById('number').style.color="green";
+    }else{
+        document.getElementById('number').style.color="red";
+    }
+    if(document.getElementById('password').value.length>=6){
+        document.getElementById('length').style.color="green";
+    }else{
+        document.getElementById('length').style.color="red";
+    }
 }
    
    let check=document.getElementById('checksso1');
