@@ -1,9 +1,8 @@
 
-#foote{
-    border: 2px solid;
-    display: flex;
-   
-   
+#footer{
+   border: 2px solid;
+   display: flex;
+   background-color: black;
 }
 #con{
     width: 100%;

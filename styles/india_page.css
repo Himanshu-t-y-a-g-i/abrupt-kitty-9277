@@ -1,10 +1,10 @@
+/* main container section */
 #main_container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
     margin: auto;
-    /* height: 500px; */
-    
   }
+  /* first section */
   .p-first {
     height: 20px;
     color: #595959;
@@ -12,22 +12,22 @@
     line-height: 20px;
     font-size: 15px;
   }
+  /* for region link india world and business */
   .h_first {
     border-top: 0.5px solid rgba(128, 128, 128, 0.468);
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.468);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-family: 'Merriweather', serif;
-    width: 770px;
+    width: 63%;
     height: 46px;
-    font-size: 18.5px;
-    
+    font-size: 18.5px; 
   }
+  /* read this section */
   .child_div {
     border: 0.5px solid rgba(128, 128, 128, 0.468);
-    width: 368px;
-    /* height: 400px; */
+    width: 32%;
     margin-left: 65%;
-    margin-top: -47px;
+    margin-top: -41.8%;
   }
   .child_div span {
     /* border: 1px solid red; */
@@ -37,8 +37,8 @@
     line-height: 24px;
     text-align: left;
     font-weight: bolder;
-    height: 54px;
-    width: 152px;
+    /* height: 54px; */
+    width: 30%;
     padding: 20px 20px 10px 30px;
     position: relative;
     display: inline-block;
@@ -64,11 +64,115 @@
     height: 7px;
     width: 60%;
     float: right;
-    margin-top: -55px;
+    margin-top: -25px;
   }
-  .news_div{
-    border: 1px solid blue;
-    width: 63%;
-    height: 46px;
+/* watch now section */
+  .child_div_2 {
+    border: 0.5px solid rgba(128, 128, 128, 0.468);
+    width: 32%;
+    margin-left: 65%;
+  }
+  .child_div_2 span {
+    /* border: 1px solid red; */
+    font-family: 'Open Sans', sans-serif;
+    color: #BB0A0A;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: bolder;
+    width: 50%;
+    padding: 20px 20px 10px 30px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-decoration: none solid rgb(234, 234, 234);
+    text-align: left;
+    text-indent: 0px;
+  }
+  .span_2>div:nth-child(2){
+    background-color: rgba(128, 128, 128, 0.321);
+      height: 7px;
+      width: 40%;
+      float: right;
+      margin-top: -25px;
+    }
+  .side_div_2 {
+      border: 0.5px solid rgba(186, 184, 184, 0.391);
+      height: 82px;
+    }
+  /* TOP takes section */
+  .child_div_3 {
+    border: 0.5px solid rgba(128, 128, 128, 0.468);
+    width: 32%;
+    margin-left: 65%;
+  }
+  .child_div_3 span {
+    /* border: 1px solid red; */
+    font-family: 'Open Sans', sans-serif;
+    color: #BB0A0A;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: bolder;
+    width: 50%;
+    padding: 20px 20px 10px 30px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-decoration: none solid rgb(234, 234, 234);
+    text-align: left;
+    text-indent: 0px;
+  }
+  .span_3>div:nth-child(2){
+    background-color: rgba(128, 128, 128, 0.321);
+      height: 7px;
+      width: 60%;
+      float: right;
+      margin-top: -25px;
+    }
+  .side_div_3 {
+      border: 0.5px solid rgba(186, 184, 184, 0.391);
+      height: 82px;
+    }
+    /* main news div section */
+    .news_div{
+      /* border: 1px solid blue; */
+      width: 63%;
+    }
+    .sub_news{
+      /* border: 1px solid red; */
+      height: 151px;
+    }
+  .img_div {
+    /* border: 1px solid red; */
+    /* width: 170px; */
+    width: 22%;
+    height: 96px;
+    margin-top: 9px;
+    filter : brightness(0.8) contrast(1.2); 
+  }
+.content_div{
+/* border: 1px solid teal; */
+width: 77.5%;
+margin-left: 24%;
+margin-top: -12.8%;
+}
+.content_div>div{
+  /* border: 1px solid red; */
+  width: 580px;
+  height: 60px;
+}
+.content_div>div>h2{
+  font-family: 'Merriweather', serif;
+}
+.content_div>div>p{
+  font-family: 'Open Sans', sans-serif;
+}
 
-  }
+

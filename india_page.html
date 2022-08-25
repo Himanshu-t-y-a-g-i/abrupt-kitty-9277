@@ -4,6 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>India</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="icon" href="./images/cirlce favi-icon.png" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/india_page.css" />
@@ -20,11 +25,33 @@
       </div>
       <!-- main news div -->
       <div class="news_div">
-        <div class="sub_news">1</div>
+        <div class="sub_news">
+          <div class="img_div">
+            <img
+              src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202208/Untitled-1_3.jpg?62XMCHyr_FQMj2gYX0vlW.ATFkzav9z4&size=170:96"
+              alt=""
+            />
+          </div>
+          <div class="content_div">
+            <div>
+              <h2>
+                Luxury cars, pics with SRK, Moose Wala: The life of Mundra Port
+                drug bust accused
+              </h2>
+            </div>
+            <div>
+              <p>
+                The NIA arrested Delhi-based businessman Kabir Talwar in the
+                Mundra port drug haul case. The owner of seven pubs has a wide
+                range of many luxury and expensive cars.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="sub_news">2</div>
         <div class="sub_news">3</div>
       </div>
-      <!-- Side  news div -->
+      <!-- Side  news div read this -->
       <div class="child_div">
         <div class="span">
           <div><span>READ THIS</span></div>
@@ -35,71 +62,102 @@
         <div class="side_div">3</div>
         <div class="side_div">4</div>
       </div>
+      <!-- watch right now section -->
+      <div class="child_div_2">
+        <div class="span_2">
+          <div><span>WATCH RIGHT NOW</span></div>
+          <div></div>
+        </div>
+        <div class="side_div_2">1</div>
+        <div class="side_div_2">2</div>
+        <div class="side_div_2">3</div>
+        <div class="side_div_2">4</div>
+        <div class="side_div_2">5</div>
+      </div>
+      <!-- Side  news div rop takes -->
+      <div class="child_div_3">
+        <div class="span_3">
+          <div><span>TOP TAKES</span></div>
+          <div></div>
+        </div>
+        <div class="side_div_3">1</div>
+        <div class="side_div_3">2</div>
+        <div class="side_div_3">3</div>
+      </div>
     </div>
+    <!-- footer section -->
+    <div id="footer"></div>
   </body>
 </html>
-<script src="./scripts/india.js" type="module">
+<script src="./scripts/india.js" type="module"></script>
+<script type="module">
+  // Navbar and scroll to top init
+
   let scroller = document.getElementById("scrollToTop");
 
   let scrolled = () => {
-      let pos = document.documentElement.scrollTop;
-      let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      let b = Math.round((pos * 100) / a);
-      if (b > 15) {
-          scroller.style.display = "block";
-      } else {
-          scroller.style.display = "none";
-      }
-  }
+    let pos = document.documentElement.scrollTop;
+    let a =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let b = Math.round((pos * 100) / a);
+    if (b > 15) {
+      scroller.style.display = "block";
+    } else {
+      scroller.style.display = "none";
+    }
+  };
 
   window.addEventListener("scroll", () => {
-      scrolled();
-  })
+    scrolled();
+  });
 
   window.addEventListener("load", () => {
-      scrolled();
-  })
+    scrolled();
+  });
 
   let scrollTop = () => {
-      window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth"
-      });
-  }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   document.querySelector("#scrollToTop").addEventListener("click", () => {
-      scrollTop();
-  })
+    scrollTop();
+  });
 
   // main menu drop down
 
   let showDropDown = () => {
-      let dropDown = document.getElementById("dropDownSec");
-      dropDown.style.display = "flex";
-  }
+    let dropDown = document.getElementById("dropDownSec");
+    dropDown.style.display = "flex";
+  };
 
   let hideDropDown = () => {
-      let dropDown = document.getElementById("dropDownSec");
-      dropDown.style.display = "none";
-  }
+    let dropDown = document.getElementById("dropDownSec");
+    dropDown.style.display = "none";
+  };
 
-  document.getElementById("dropDown").addEventListener("click",() => {
-      showDropDown();
-  })
+  document.getElementById("dropDown").addEventListener("click", () => {
+    showDropDown();
+  });
 
-  document.getElementById("dropDown").addEventListener("dblclick",() => {
-      hideDropDown();
-  })
+  document.getElementById("dropDown").addEventListener("dblclick", () => {
+    hideDropDown();
+  });
 
   // search functionality
   let search = document.getElementById("search");
 
   let submitted = () => {
-      console.log("submitted");
-  }
+    console.log("submitted");
+  };
 
-  search.addEventListener("search",()=>{
-      submitted();
-  })
+  search.addEventListener("search", () => {
+    submitted();
+  });
+
+  // navbar and scroll to top end
 </script>
