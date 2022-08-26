@@ -18,25 +18,26 @@
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.468);
     /* border: 1px solid blue; */
     font-family: 'Merriweather', serif;
+    font-size: 20px;
     width: 63%;
-    height: 46px;
+    /* height: 46px; */
     font-size: 18.5px; 
   }
   /* read this section */
   .child_div {
     border: 0.5px solid rgba(128, 128, 128, 0.468);
-    width: 32%;
+    width: 23.0625rem;
     margin-left: 65%;
-    margin-top: -41.8%;
+    margin-top: -267%;
   }
   .child_div span {
     /* border: 1px solid red; */
     font-family: 'Open Sans', sans-serif;
     color: #BB0A0A;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     text-align: left;
-    font-weight: bolder;
+    font-weight: 700;
     /* height: 54px; */
     width: 30%;
     padding: 20px 20px 10px 30px;
@@ -55,12 +56,42 @@
     height: 123px;
   }
   .side_div {
+    width: 100%;
     border: 0.5px solid rgba(186, 184, 184, 0.391);
-    height: 82px;
+    height: 5.125rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    cursor: pointer;
+  }
+  .side_div>div:first-child{
+    /* border: 1px solid red; */
+    width: 13.5rem;
+    /* width: auto; */
+    margin: auto;
+    margin-left: 1.8125rem;
+    margin-right: -2.625rem;
+  }
+  .side_div>div:first-child:hover{
+    color: #1a3c8d;
+  }
+  .side_div>div:last-child{
+    /* border: 1px solid blue; */
+    width: 5.5rem;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .side_div>div>img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+  .side_div>div>img:hover{
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
   
   .span>div:nth-child(2){
-  background-color: rgba(128, 128, 128, 0.321);
+  background-color: rgba(186, 184, 184, 0.204);
     height: 7px;
     width: 60%;
     float: right;
@@ -69,7 +100,7 @@
 /* watch now section */
   .child_div_2 {
     border: 0.5px solid rgba(128, 128, 128, 0.468);
-    width: 32%;
+    width: 23.0625rem;
     margin-left: 65%;
   }
   .child_div_2 span {
@@ -79,8 +110,8 @@
     font-size: 20px;
     line-height: 24px;
     text-align: left;
-    font-weight: bolder;
-    width: 50%;
+    font-weight: 700;
+    width: 60%;
     padding: 20px 20px 10px 30px;
     position: relative;
     display: inline-block;
@@ -94,19 +125,15 @@
   }
   .span_2>div:nth-child(2){
     background-color: rgba(128, 128, 128, 0.321);
-      height: 7px;
-      width: 40%;
+      height: .4375rem;
+      width: 35%;
       float: right;
-      margin-top: -25px;
-    }
-  .side_div_2 {
-      border: 0.5px solid rgba(186, 184, 184, 0.391);
-      height: 82px;
+      margin-top: -1.5625rem;
     }
   /* TOP takes section */
   .child_div_3 {
     border: 0.5px solid rgba(128, 128, 128, 0.468);
-    width: 32%;
+    width: 23.0625rem;
     margin-left: 65%;
   }
   .child_div_3 span {
@@ -136,10 +163,6 @@
       float: right;
       margin-top: -25px;
     }
-  .side_div_3 {
-      border: 0.5px solid rgba(186, 184, 184, 0.391);
-      height: 82px;
-    }
     /* main news div section */
     .news_div{
       /* border: 1px solid blue; */
@@ -153,26 +176,37 @@
     /* border: 1px solid red; */
     /* width: 170px; */
     width: 22%;
-    height: 96px;
+    height: 6rem;
     margin-top: 9px;
-    filter : brightness(0.8) contrast(1.2); 
+    filter : brightness(0.8) contrast(1.2);
+    overflow: hidden; 
+  }
+  .img_div>img{
+    width: 100%;
+   transition: 0.5s all ease-in-out;
+  }
+  .img_div>img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
   }
 .content_div{
 /* border: 1px solid teal; */
-width: 77.5%;
+/* width: 77.5%; */
+width: auto;
 margin-left: 24%;
 margin-top: -12.8%;
 }
 .content_div>div{
   /* border: 1px solid red; */
-  width: 580px;
-  height: 60px;
+  width: auto;
+  /* width: 580px; */
+  /* height: 60px; */
 }
 .content_div>div>h2{
   font-family: 'Merriweather', serif;
+  font-size: 20px;
 }
 .content_div>div>p{
   font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
 }
-
-
