@@ -14,7 +14,8 @@
 #sRes img {
     width: 20%;
     height: 100%;
-    transition: transform .2s;
+    transition: 0.2s all ease-in-out;
+    box-sizing: border-box;
 }
 
 #sRes>div>div {
