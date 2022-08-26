@@ -1,5 +1,5 @@
 let navbar = () => {
-  return `<div>
+    return `<div>
     <div>
         <a href="./index.html">IndiaToday</a>
         <a href="https://malayalam.indiatoday.in/">Malyalam</a>
@@ -21,7 +21,7 @@ let navbar = () => {
         <a href="">LIVE TV</a>
         <a href="./index.html"><img src="https://akm-img-a-in.tosshub.com/sites/all/themes/itg/logo.png?v=1.52"
                 alt="No img found"></a>
-        <a href="">APP</a>
+        <a href="./app.html">APP</a>
         <a href="">MAGAZINE</a>
     </div>
 </div>
