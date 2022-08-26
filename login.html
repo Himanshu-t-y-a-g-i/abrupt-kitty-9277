@@ -36,19 +36,21 @@
     
     
     
-  <span id="mail"><img  class="env" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXbus7_wv2wPc-AnAoxa5HlV-RJsO5HK_kTV4znYR4w&s" alt=""> <input type="text" id="email_mob" oninput="getdata()" placeholder=" Enter your Email or Mobile" value=""></span>
+  <span id="mail"><img  class="env" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXbus7_wv2wPc-AnAoxa5HlV-RJsO5HK_kTV4znYR4w&s" alt=""> <input type="text" id="email_mob"  placeholder=" Enter your Email or Mobile" value=""></span>
     <p id="name"></p>
     <span id="passbox123"><img  class="env" src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-key-thin.png" alt=""><input type="password" id="password" placeholder="*Password"  value=""></span>
+    <span id="ootp"><input type="number" id="otpshow" placeholder="Enter 4 digit opt on email/number(ref=1234)"  value=""></span>
    
     <span class="field"><p id="pass"></p></span>
-    <!-- <div id="otpshow"></div> -->
+   
     <div class="box">
-        <div><a href="login.html">Forgot password?</a></div>
-        <div><a  style="cursor: pointer;">Login using OTP</a></div>
+        <div><a onclick="forgotpass()" style="cursor: pointer;">Forgot password?</a></div>
+        <div><a onclick="otp()"  style="cursor: pointer;">Login using OTP</a></div>
 
      </div>
-
-    <button onclick="login()">Log in</button>
+<button onclick="loginotp123()" id="loginotp">Login via otp</button>
+    <button onclick="login()" id="login">Log in</button>
+    
 
    
        

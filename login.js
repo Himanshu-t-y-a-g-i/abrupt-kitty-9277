@@ -1,5 +1,9 @@
 let userdata=JSON.parse(localStorage.getItem("users"));
 let login1=JSON.parse(localStorage.getItem("logindata"))||[];
+let optdata=JSON.parse(localStorage.getItem("otpdata"))||[];
+document.getElementById('loginotp').style.display="none";
+document.getElementById('ootp').style.display="none";
+
 function showname(){
     let name1=document.getElementById('name');
     name1.innerText="Enter your email/mobile number field is required.";
@@ -75,22 +79,46 @@ function checklogin(email,password){
 
 
 
-// function otp(){
-//    let passwordbox=document.getElementById("passbox123");
-//    if(document.getElementById("email_mob").value!==""){
-//     passwordbox.style.display="none";
-    
-//     let div=document.createElement("div");
-   
-//      let input=document.createElement("input");
-//      input.type="number";
-//      input.style.width="400px";
-//      input.style.textAlign="center"
+function otp(){
 
-//      div.append(input);
-//      document.getElementById('otpshow').append(div)
-//    }
+   let passwordbox=document.getElementById("passbox123");
+   if(document.getElementById("email_mob").value!==""){
+    passwordbox.style.display="none";
+    let ootp=document.getElementById('ootp')
+    ootp.style.display="block";
+    document.getElementById('login').style.display="none"
+    document.getElementById('loginotp').style.display="block";
+
+   
+    
+    document.getElementById("otpshow").style.width="350px";
+     
+    document.getElementById("otpshow").style.marginLeft="130px";
+
   
+   }
+}
+  
+function loginotp123(){
+    if(document.getElementById("otpshow").value!=="" && document.getElementById("otpshow").value.length==4 ){
+        if(document.getElementById("otpshow").value==1234){
+            alert('login successful');
+            window.location.href="index.html"
+        }else{
+            alert('wrong opt'); 
+        }
+    }
+    else{
+        alert('enter right opt')
+    }
+}
+
+function forgotpass(){
+    if(document.getElementById("email_mob").value!==""){
+        alert("password reset link send to your mail/number")
+    }
+
+}
 
 
   
