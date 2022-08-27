@@ -2,6 +2,21 @@
 
 /* top left section */
 
+.img_div{
+    overflow: hidden;
+}
+
+.img_div>img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.img_div>img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 #topSec {
     width: 80%;
     margin: auto;

@@ -17,6 +17,9 @@ function showData(){
     result.forEach(el => {
         let div = document.createElement("div");
 
+        let div1= document.createElement("div");
+        div1.setAttribute("class","img_div")
+
         let img = document.createElement("img");
         if(el.urlToImage===null){
             img.src = "https://upload.wikimedia.org/wikipedia/commons/b/be/India_Today_TV_Channel_logo.jpg";
@@ -26,6 +29,8 @@ function showData(){
         img.addEventListener("click",()=>{
             sendToDetails();
         })
+
+        div1.append(img);
         
         let divi = document.createElement("div");
         let h2 = document.createElement("h2");
@@ -41,7 +46,7 @@ function showData(){
         })
         
         divi.append(h2,p);
-        div.append(img,divi);
+        div.append(div1,divi);
         document.querySelector("#sRes").append(div);
 
         function sendToDetails(){
