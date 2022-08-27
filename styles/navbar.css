@@ -94,7 +94,7 @@
 
 /* scroll bar */
 #scrollToTop {
-    display: none;
+    display: block;
 }
 
 #scrollToTop>svg {
