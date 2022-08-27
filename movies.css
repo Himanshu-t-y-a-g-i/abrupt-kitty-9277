@@ -1,0 +1,16 @@
+#mid{
+    display: grid;
+    grid-template-columns: 25% 24% 24% 24% ;
+    gap: 10px;
+    grid-template-rows: auto;
+    
+}
+#mid>div{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+#mid>div>img{
+    width: 300px;
+    height: 300px;
+}
