@@ -1,21 +1,36 @@
+body>p{
+    width: 80%;
+    margin: auto;
+    display: block;
+    color: grey;
+}
+
 #sRes {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 80%;
-    margin: 5vh auto;
+    margin: 3vh auto;
 }
 
 #sRes>div {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.img_div{
+    overflow: hidden;
 }
 
 #sRes img {
-    width: 20%;
-    height: 100%;
-    transition: 0.2s all ease-in-out;
-    box-sizing: border-box;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+#sRes img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #sRes>div>div {
@@ -31,10 +46,6 @@
 #sRes p:hover,
 #sRes img:hover {
     cursor: pointer;
+    color:rgb(0, 97, 171);
 }
 
-#sRes img:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
