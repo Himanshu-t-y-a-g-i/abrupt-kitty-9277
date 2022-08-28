@@ -40,8 +40,8 @@ let navbar = () => {
             <a href="./india_page.html">INDIA</a>
             <a href="./world_page.html">WORLD</a>
             <a href="./business.html">BUSINESS</a>
-            <a href="">TECH</a>
-            <a href="">MOVIES</a>
+            <a href="tech.html">TECH</a>
+            <a href="movies.html">MOVIES</a>
             <a href="">SPORTS</a>
             <a href="">SCIENCE</a>
             <a href="">BEST UNIVERSITIES</a>

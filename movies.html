@@ -1,96 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest Bollywood News , Bollywood Gossips, Movies review</title>
-<<<<<<< HEAD
     <link rel="icon" href="./images/cirlce favi-icon.png" />
     <link rel="stylesheet" href="movies.css">
-=======
-    
     <link rel="stylesheet" href="./styles/movies.css">
->>>>>>> 97cb317c0312e1ce59ae0e5474ca157952103583
+    <link rel="stylesheet" href="./styles/navbar.css">
     <style>
-        #top{
+        #top {
             width: 100%;
             background-image: url("https://media.istockphoto.com/photos/modern-brick-wall-3d-rendering-picture-id1140265911?b=1&k=20&m=1140265911&s=170667a&w=0&h=cLoyrHySMr6agb3jd7kjL_KQZwW4c-JdgpCeFu_r81s=");
             height: 500px;
-            display:grid;
+            display: grid;
             grid-template-columns: 40% 40% 20%;
             justify-content: center;
-            align-items: center ;
+            align-items: center;
         }
-        #top>div{
+
+        #top>div {
             width: 100%;
             height: 400px;
-            display:grid;
+            display: grid;
             justify-content: center;
-            align-items: center ;
-          
+            align-items: center;
+
             background-color: #1f1f1f;
             margin-left: 20px;
         }
-        #top>div>img{
-            display:grid;
+
+        #top>div>img {
+            display: grid;
             justify-content: center;
-            align-items: center ;
+            align-items: center;
             width: 100%;
             height: auto;
         }
-       .logo{
+
+        .logo {
             margin: 10px;
         }
-       .topimg1{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 200px;
-        justify-content: center;
-        align-items: center;
-       }
-       .img1>img{
-        width:300px;
-        height: 140px;
-        display: block;
-        margin: auto;
-       }
-       .img2>img{
-        width: 300px;
-        height: 140px;
-        display: block;
-        margin: auto;
-       }
-       .img1>img+h4{
-        width: 400px;
-        margin-top: -3px;
-        margin: auto;
-        text-align: center;
-       }
-       .img2>img+h4{
-        width: 400px;
-        margin-top: -3px;
-        margin: auto;
-        text-align: center;
-    
-       }
 
-   
+        .topimg1 {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 200px 200px;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .img1>img {
+            width: 300px;
+            height: 140px;
+            display: block;
+            margin: auto;
+        }
+
+        .img2>img {
+            width: 300px;
+            height: 140px;
+            display: block;
+            margin: auto;
+        }
+
+        .img1>img+h4 {
+            width: 400px;
+            margin-top: -3px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .img2>img+h4 {
+            width: 400px;
+            margin-top: -3px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        /* footer */
+
+        #footer {
+            /* border: 2px solid red; */
+            /* display: flex; */
+            background-color: black;
+
+        }
+
+        #con {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* background-color: black; */
+        }
+
+        .box {
+            width: 200px;
+            margin-left: 30px;
+            /* border: 2px solid red; */
+        }
+
+        .box a {
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: gray;
+        }
+
+        .box h3 {
+            margin-top: 30px;
+            line-height: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .box a:hover {
+            color: yellow;
+        }
+
+        .end {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 120px;
+            margin-top: -20px;
+
+            /* background-color: black; */
+        }
+
+        .end>h3 {
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .75rem;
+            line-height: 1rem;
+
+        }
+
+        #img {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: .625rem;
+            margin-top: .625rem;
+        }
     </style>
-</head> 
+</head>
+
 <body>
+    <nav id="nav"></nav>
     <img class="logo" src="https://akm-img-a-in.tosshub.com/indiatoday/images/misc/IT_Entertainment_web.png">
     <div id="top">
-  <div class="topimg">
-    
-  </div>
- 
-    <div class="topimg1">
-        <div class="img1"></div>
-        <div class="img2"></div>
-    </div>
+        <div class="topimg">
+
+        </div>
+
+        <div class="topimg1">
+            <div class="img1"></div>
+            <div class="img2"></div>
+        </div>
     </div>
     <div id="midSec">
         <div id="mid1">
@@ -99,8 +175,10 @@
                 <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202208/301492668_159774806644644_5820_1_1200x768.jpeg?size=370:208"
                     alt="no img found">
                 <h3>Ajay Devgn and Tabu wrap up Bholaa shoot</h3>
-                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Jr NTR to grace Bhramastra pre-release event as chief guest in Hyderabad</p>
-                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Aditya Chopra says 'DDLJ musical is a celebration of inclusivity in growing toxic world of intolerance'</p>
+                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Jr NTR to grace Bhramastra pre-release event as chief
+                    guest in Hyderabad</p>
+                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Aditya Chopra says 'DDLJ musical is a celebration of
+                    inclusivity in growing toxic world of intolerance'</p>
                 <p class="links">MORE FROM BOLLYWOOD</p>
             </div>
             <div class="mid1box">
@@ -117,11 +195,14 @@
                 <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202208/Misha-6-shahid-mira-daughter.jpg?size=370:208"
                     alt="no img found">
                 <h3>Shahid Kapoor and Mira Rajput's daughter Misha turns 6. Latter says 'lucky to be your mama'</h3>
-                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Rhea Kapoor already has a cute nickname for Sonam Kapoor and Anand Ahuja's baby boy. Find out</p>
-                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Farhan Akhtar pens sweet note for wife Shibani on her 42nd birthday</p>
+                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Rhea Kapoor already has a cute nickname for Sonam Kapoor
+                    and Anand Ahuja's baby boy. Find out</p>
+                <p><span class="bullet">&#x2022&nbsp&nbsp</span>Farhan Akhtar pens sweet note for wife Shibani on her
+                    42nd birthday</p>
                 <p class="links">MORE FROM CELEBRITIES </p>
             </div>
-            </div></div>
+        </div>
+    </div>
     <div id="sidebar">
         <div id="mid">
 
@@ -130,9 +211,101 @@
 
         </div>
     </div>
-    
-   
-    
+
+
+    <div id="footer"></div>
 </body>
+
 </html>
 <script src="./scripts/movies.js"></script>
+<script type="module">
+
+    // Navbar and scroll to top init
+
+    import navbar from "./components/navbar.js"
+
+    document.querySelector("#nav").innerHTML = navbar();
+
+    let scroller = document.getElementById("scrollToTop");
+
+    let scrolled = () => {
+        let pos = document.documentElement.scrollTop;
+        let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let b = Math.round((pos * 100) / a);
+        if (b > 15) {
+            scroller.style.display = "block";
+        } else {
+            scroller.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", () => {
+        scrolled();
+    })
+
+    window.addEventListener("load", () => {
+        scrolled();
+    })
+
+    let scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+
+    document.querySelector("#scrollToTop").addEventListener("click", () => {
+        scrollTop();
+    })
+
+    // main menu drop down
+
+    let showDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "flex";
+    }
+
+    let hideDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "none";
+    }
+
+    document.getElementById("dropDown").addEventListener("click", () => {
+        showDropDown();
+    })
+
+    document.getElementById("dropDown").addEventListener("dblclick", () => {
+        hideDropDown();
+    })
+
+    // search functionality
+    let search = document.getElementById("search");
+
+    let submitted = async (query) => {
+        try {
+            // let key = "pub_105542082a44e012a61301d0ea8bb55421a19";
+            // let res = await fetch(`https://newsdata.io/api/1/news?apikey=${key}&q=${query}`);
+            let key = "3a2ea667e2344d5e9ba3e7f0a7a25feb";
+            let res = await fetch(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${key}`);
+            let data = await res.json();
+            let result = data.articles;
+            localStorage.setItem("searchData", JSON.stringify(result));
+            window.location.href = "./search.html";
+        } catch (error) {
+            console.log("Error: ", error);
+        }
+    }
+
+    search.addEventListener("search", () => {
+        let query = search.value;
+        console.log("Successful")
+        submitted(query);
+    })
+    // navbar and scroll to top end
+
+    // footer section
+    import footer from "./components/foot.js";
+    document.getElementById("footer").innerHTML = footer();
+    // footer section end
+</script>

@@ -1,51 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/cirlce favi-icon.png" />
-    <title></title>
-<style>
-.top{
-    color: gray;
-}
-.top>a{
-    text-decoration: none;
-    color: gray;
-}
-#news{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    width: 100%;
-    margin-top: 15px;
-  
-}
-.img>img{
-    width: 100%;
-    height:auto ;
-}
-.info{
-   
-    width: 95%;
-    height: auto;
-    margin-left: 10px;
-   
-   
-}
-</style>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <title>Movies</title>
+    <style>
+        .top {
+            color: gray;
+        }
+
+        .top>a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #news {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            width: 100%;
+            margin-top: 15px;
+
+        }
+
+        .img>img {
+            width: 100%;
+            height: auto;
+        }
+
+        .info {
+
+            width: 95%;
+            height: auto;
+            margin-left: 10px;
+        }
+
+        /* footer */
+        #footer {
+            /* border: 2px solid red; */
+            /* display: flex; */
+            background-color: black;
+
+        }
+
+        #con {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* background-color: black; */
+        }
+
+        .box {
+            width: 200px;
+            margin-left: 30px;
+            /* border: 2px solid red; */
+        }
+
+        .box a {
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: gray;
+        }
+
+        .box h3 {
+            margin-top: 30px;
+            line-height: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .box a:hover {
+            color: yellow;
+        }
+
+        .end {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 120px;
+            margin-top: -20px;
+
+            /* background-color: black; */
+        }
+
+        .end>h3 {
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .75rem;
+            line-height: 1rem;
+
+        }
+
+        #img {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: .625rem;
+            margin-top: .625rem;
+        }
+
+
+        /* footer */
+        #footer {
+            /* border: 2px solid red; */
+            /* display: flex; */
+            background-color: black;
+
+        }
+
+        #con {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* background-color: black; */
+        }
+
+        .box {
+            width: 200px;
+            margin-left: 30px;
+            /* border: 2px solid red; */
+        }
+
+        .box a {
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: gray;
+        }
+
+        .box h3 {
+            margin-top: 30px;
+            line-height: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .box a:hover {
+            color: yellow;
+        }
+
+        .end {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 120px;
+            margin-top: -20px;
+
+            /* background-color: black; */
+        }
+
+        .end>h3 {
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .75rem;
+            line-height: 1rem;
+
+        }
+
+        #img {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: .625rem;
+            margin-top: .625rem;
+        }
+    </style>
 </head>
+
 <body>
-    <span class="top"><a href="index.html">Home</a>/<a href="movies.html">Movies</a>/<span id="latestnews"></span></span>
+    <nav id="nav"></nav>
+    <span class="top"><a href="index.html">Home</a>/<a href="movies.html">Movies</a>/<span
+            id="latestnews"></span></span>
     <div id="news">
         <div class="img">
-         
+
         </div>
         <div class="info">
 
         </div>
     </div>
+    <div id="footer"></div>
 </body>
+
 </html>
 <script src="./scripts/moviesnews.js"></script>
+<script type="module">
+
+    // Navbar and scroll to top init
+
+    import navbar from "./components/navbar.js"
+
+    document.querySelector("#nav").innerHTML = navbar();
+
+    let scroller = document.getElementById("scrollToTop");
+
+    let scrolled = () => {
+        let pos = document.documentElement.scrollTop;
+        let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let b = Math.round((pos * 100) / a);
+        if (b > 15) {
+            scroller.style.display = "block";
+        } else {
+            scroller.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", () => {
+        scrolled();
+    })
+
+    window.addEventListener("load", () => {
+        scrolled();
+    })
+
+    let scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+
+    document.querySelector("#scrollToTop").addEventListener("click", () => {
+        scrollTop();
+    })
+
+    // main menu drop down
+
+    let showDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "flex";
+    }
+
+    let hideDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "none";
+    }
+
+    document.getElementById("dropDown").addEventListener("click", () => {
+        showDropDown();
+    })
+
+    document.getElementById("dropDown").addEventListener("dblclick", () => {
+        hideDropDown();
+    })
+
+    // search functionality
+    let search = document.getElementById("search");
+
+    let submitted = async (query) => {
+        try {
+            // let key = "pub_105542082a44e012a61301d0ea8bb55421a19";
+            // let res = await fetch(`https://newsdata.io/api/1/news?apikey=${key}&q=${query}`);
+            let key = "3a2ea667e2344d5e9ba3e7f0a7a25feb";
+            let res = await fetch(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${key}`);
+            let data = await res.json();
+            let result = data.articles;
+            localStorage.setItem("searchData", JSON.stringify(result));
+            window.location.href = "./search.html";
+        } catch (error) {
+            console.log("Error: ", error);
+        }
+    }
+
+    search.addEventListener("search", () => {
+        let query = search.value;
+        console.log("Successful")
+        submitted(query);
+    })
+    // navbar and scroll to top end
+
+    // footer section
+    import footer from "./components/foot.js";
+    document.getElementById("footer").innerHTML = footer();
+    // footer section end
+</script>
