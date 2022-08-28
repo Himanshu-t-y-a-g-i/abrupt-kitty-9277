@@ -30,7 +30,7 @@ let navbar = () => {
     <div>
         <div>
             <a href="./index.html">Home</a>
-            <a href="">
+            <a href="./myfeed.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                     class="bi bi-pencil" viewBox="0 0 16 16">
                     <path
@@ -40,9 +40,9 @@ let navbar = () => {
             <a href="./india_page.html">INDIA</a>
             <a href="./world_page.html">WORLD</a>
             <a href="./business.html">BUSINESS</a>
-            <a href="tech.html">TECH</a>
-            <a href="movies.html">MOVIES</a>
-            <a href="">SPORTS</a>
+            <a href="./tech.html">TECH</a>
+            <a href="./movies.html">MOVIES</a>
+            <a href="./sports.html">SPORTS</a>
             <a href="">SCIENCE</a>
             <a href="">BEST UNIVERSITIES</a>
         </div>
