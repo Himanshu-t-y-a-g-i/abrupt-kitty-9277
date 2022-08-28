@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,75 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
     <style>
-        #myfeed>h5{
-        text-align: center;
+        #myfeed>h5 {
+            text-align: center;
         }
+
         /* #myfeed>img{
         width: 60%;
         margin-left: 270px;
         } */
-      
-        #myfeed>div{
+
+        #myfeed>div {
             margin-top: 10px;
             width: 90%;
             /* height: 40px; */
-          background-color: 
-        #f3f3f3;
+            background-color:
+                #f3f3f3;
             /* border: 2px solid; */
             display: flex;
             justify-content: space-around;
-            margin-left: 5%;
+            padding: 20;
             color: gray;
         }
-        #myfeed  h4{
+
+        #myfeed h4 {
             /* border: 2px solid; */
             font-size: 20px;
-           
+
         }
-        #myfeed  h4:hover{
+
+        #myfeed h4:hover {
             /* border: 2px solid; */
             font-size: 20px;
             color: black;
             cursor: pointer;
-           
+
         }
-        #cont{
-      
-        
-        margin-left: 270px;
+
+        #cont {
+            margin-left: 270px;
         }
-        #cont img{
+
+        #cont img {
             width: 80%;
             height: 150px;
             /* border: 2px solid red;  */
         }
-        #feednew_nav{
-        /* border: 2px solid red; */
-        width: 90%;
-        margin-left: 60px;
-        display: grid;
-        grid-template-columns: repeat(7,1fr);
-        gap: 15px;
+
+        #feednew_nav {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 15px;
         }
-        .feednew_nav p{
+
+        .feednew_nav p {
             /* border: 2px solid red; */
-            margin-left: 30px;
+            text-align: center;
         }
-        .feednew_nav img{
+
+        .feednew_nav img {
             /* border: 2px solid red; */
-           width: 100px;
-           height: 50px;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            display: block;
         }
-        button{
-            width: 90%;
-            height: 40px;
-            margin-left: 60px;
+
+        button {
+            margin: 10px 0px;
+            width: 100%;
+            padding: 10px 0px;
         }
 
         /* footer */
@@ -83,7 +90,7 @@
 
         #con {
             width: 90%;
-            margin:auto;
+            margin: auto;
             /* border: 2px solid red; */
             display: flex;
             /* background-color: black; */
@@ -144,170 +151,187 @@
             gap: .625rem;
             margin-top: .625rem;
         }
+
+        #mainBody {
+            width: 80%;
+            margin: auto;
+        }
     </style>
 </head>
+
 <body>
     <nav id="nav"></nav>
-<div id="myfeed">
-    <h5>ADVERTISEMENT</h5>
-    <div id="cont"></div>
-    <!-- <img src="https://tpc.googlesyndication.com/simgad/4067651655008546901" alt=""> -->
-    <div>
-        <h4>My News Feed</h4>
-        <h4>Recommended For You</h4>
-        <h4>Personalise</h4>
-        <h4>India</h4>
-        <h4>Movies</h4>
-        <h4>World</h4>
-        <h4>Technology</h4>
-        <h4>Sports</h4>
-        <h4>auto</h4>
-        <h4>Programmes</h4>
-</div>
-</div>
-<div id="feednew_nav">
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_india.png" alt="">
-        <p>India</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-     
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_movies.png" alt="">
-        <p>Movies</p>
-        <hr>
-    </div>
-</div> 
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_world.png" alt="">
-        <p>World</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_technology.png" alt="">
-        <p>Technology</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_sports.png" alt="">
-        <p>Sports</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_business.png" alt="">
-        <p>Business</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_videos.png" alt="">
-        <p>Videos</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_auto.png" alt="">
-        <p>Auto</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_photos.png" alt="">
-        <p>Photos</p>
-        <hr>
-    </div>
-</div>  
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_mailtoday.png" alt="">
-        <p>Mail Today</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_factcheck.png" alt="">
-        <p>Fact Check</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_lifestyle.png" alt="">
-        <p>Lifestyle</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_programmes.png" alt="">
-        <p>Programmes</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_technology.png" alt="">
-        <p>Television</p>
-        <hr>
-    </div>
-</div>
-<div class="feednew_nav">
-    <input type="checkbox" id="recom_cats">
-    <span class="checkbox"></span>
-    <div class="caption">
-        
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_science.png" alt="">
-        <p>Science</p>
-        
-    </div>
-</div>
+    <div id="mainBody">
+        <div id="myfeed">
+            <h5>ADVERTISEMENT</h5>
+            <div id="cont"></div>
+            <!-- <img src="https://tpc.googlesyndication.com/simgad/4067651655008546901" alt=""> -->
+            <div>
+                <h4>My News Feed</h4>
+                <h4>Recommended For You</h4>
+                <h4>Personalise</h4>
+                <h4>India</h4>
+                <h4>Movies</h4>
+                <h4>World</h4>
+                <h4>Technology</h4>
+                <h4>Sports</h4>
+                <h4>auto</h4>
+                <h4>Programmes</h4>
+            </div>
+        </div>
+        <div id="feednew_nav">
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_india.png" alt="">
+                    <p>India</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
 
-</div>
-<button>SKIP</button>
-<div id="footer"></div>
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_movies.png" alt="">
+                    <p>Movies</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_world.png" alt="">
+                    <p>World</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_technology.png"
+                        alt="">
+                    <p>Technology</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_sports.png" alt="">
+                    <p>Sports</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_business.png"
+                        alt="">
+                    <p>Business</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_videos.png" alt="">
+                    <p>Videos</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_auto.png" alt="">
+                    <p>Auto</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_photos.png" alt="">
+                    <p>Photos</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_mailtoday.png"
+                        alt="">
+                    <p>Mail Today</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_factcheck.png"
+                        alt="">
+                    <p>Fact Check</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_lifestyle.png"
+                        alt="">
+                    <p>Lifestyle</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_programmes.png"
+                        alt="">
+                    <p>Programmes</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_technology.png"
+                        alt="">
+                    <p>Television</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="feednew_nav">
+                <input type="checkbox" id="recom_cats">
+                <span class="checkbox"></span>
+                <div class="caption">
+
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/mediamanager/foryou_science.png"
+                        alt="">
+                    <p>Science</p>
+
+                </div>
+            </div>
+
+        </div>
+        <button>SKIP</button>
+    </div>
+    <div id="footer"></div>
 </body>
+
 </html>
 <!-- <script src="./scripts/myfeed.js" type="module"></script> -->
 <script type="module">
@@ -396,22 +420,22 @@
     })
     // navbar and scroll to top end
 
-        // displaying user name
-        let logInStatus=localStorage.getItem("loggedInStatus");
+    // displaying user name
+    let logInStatus = localStorage.getItem("loggedInStatus");
     let userName = localStorage.getItem("loggedInUsername");
     let loginDetail = document.getElementById("userDetails");
-    if(logInStatus === "true"){
+    if (logInStatus === "true") {
         // console.log("loggedIn", userName)
-        document.querySelector("#profile").addEventListener("mouseenter",()=>{
+        document.querySelector("#profile").addEventListener("mouseenter", () => {
             showProfile();
         })
-        function showProfile(){
+        function showProfile() {
             loginDetail.style.display = "block";
         }
-        document.querySelector("#profile").addEventListener("mouseleave",()=>{
+        document.querySelector("#profile").addEventListener("mouseleave", () => {
             hideProfile();
         })
-        function hideProfile(){
+        function hideProfile() {
             loginDetail.style.display = "none";
         }
         loginDetail.innerHTML = "";
@@ -422,13 +446,13 @@
         let button = document.createElement("button");
         button.innerText = "Sign Out";
 
-        button.addEventListener("click",()=>{
+        button.addEventListener("click", () => {
             signOut();
         })
         loginDetail.append(h3, button);
     }
 
-    function signOut(){
+    function signOut() {
         localStorage.removeItem("loggedInStatus");
         localStorage.removeItem("loggedInUsername");
     }
