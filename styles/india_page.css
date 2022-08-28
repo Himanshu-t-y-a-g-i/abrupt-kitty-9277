@@ -257,7 +257,8 @@ text-align: justify;
 
 }
 #con{
-  width: 100%;
+  width: 90%;
+  margin: auto;
   /* border: 2px solid red; */
   display: flex;
 /* background-color: black; */
