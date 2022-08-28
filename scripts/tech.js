@@ -24,7 +24,6 @@ let data=[
     {
       image_url:
         "https://tpc.googlesyndication.com/simgad/9731227255969963969"
-     
     },
     
 ]
