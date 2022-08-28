@@ -54,6 +54,11 @@ else{
                 localStorage.setItem("logindata",JSON.stringify(login1));
                 alert("Login successful");
                 
+                // getting data of use to show on website
+                let name = userdata[0].name;
+                localStorage.setItem("loggedInUsername", name);
+                localStorage.setItem("loggedInStatus", true);
+
                 window.location.href="index.html"
         
             }else{

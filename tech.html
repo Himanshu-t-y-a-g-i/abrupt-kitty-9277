@@ -265,3 +265,130 @@
 </body>
 </html>
 <script src="./scripts/tech.js" type="module"></script>
+<script type="module">
+    // Navbar and scroll to top init
+
+    import navbar from "./components/navbar.js"
+
+    document.querySelector("#nav").innerHTML = navbar();
+
+    let scroller = document.getElementById("scrollToTop");
+
+    let scrolled = () => {
+        let pos = document.documentElement.scrollTop;
+        let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let b = Math.round((pos * 100) / a);
+        if (b > 15) {
+            scroller.style.display = "block";
+        } else {
+            scroller.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", () => {
+        scrolled();
+    })
+
+    window.addEventListener("load", () => {
+        scrolled();
+    })
+
+    let scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+
+    document.querySelector("#scrollToTop").addEventListener("click", () => {
+        scrollTop();
+    })
+
+    // main menu drop down
+
+    let showDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "flex";
+    }
+
+    let hideDropDown = () => {
+        let dropDown = document.getElementById("dropDownSec");
+        dropDown.style.display = "none";
+    }
+
+    document.getElementById("dropDown").addEventListener("click", () => {
+        showDropDown();
+    })
+
+    document.getElementById("dropDown").addEventListener("dblclick", () => {
+        hideDropDown();
+    })
+
+    // search functionality
+    let search = document.getElementById("search");
+
+    let submitted = async (query) => {
+        try {
+            // let key = "pub_105542082a44e012a61301d0ea8bb55421a19";
+            // let res = await fetch(`https://newsdata.io/api/1/news?apikey=${key}&q=${query}`);
+            let key = "3a2ea667e2344d5e9ba3e7f0a7a25feb";
+            let res = await fetch(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${key}`);
+            let data = await res.json();
+            let result = data.articles;
+            localStorage.setItem("searchData", JSON.stringify(result));
+            window.location.href = "./search.html";
+        } catch (error) {
+            console.log("Error: ", error);
+        }
+    }
+
+    search.addEventListener("search", () => {
+        let query = search.value;
+        console.log("Successful")
+        submitted(query);
+    })
+    // navbar and scroll to top end
+
+    // displaying user name
+    let logInStatus=localStorage.getItem("loggedInStatus");
+    let userName = localStorage.getItem("loggedInUsername");
+    let loginDetail = document.getElementById("userDetails");
+    if(logInStatus === "true"){
+        // console.log("loggedIn", userName)
+        document.querySelector("#profile").addEventListener("mouseenter",()=>{
+            showProfile();
+        })
+        function showProfile(){
+            loginDetail.style.display = "block";
+        }
+        document.querySelector("#profile").addEventListener("mouseleave",()=>{
+            hideProfile();
+        })
+        function hideProfile(){
+            loginDetail.style.display = "none";
+        }
+        loginDetail.innerHTML = "";
+
+        let h3 = document.createElement("h3");
+        h3.innerText = "Welcome, " + userName;
+
+        let button = document.createElement("button");
+        button.innerText = "Sign Out";
+
+        button.addEventListener("click",()=>{
+            signOut();
+        })
+        loginDetail.append(h3, button);
+    }
+
+    function signOut(){
+        localStorage.removeItem("loggedInStatus");
+        localStorage.removeItem("loggedInUsername");
+    }
+
+        // footer section
+        import footer from "./components/foot.js";
+    document.getElementById("footer").innerHTML = footer();
+    // footer section end
+</script>

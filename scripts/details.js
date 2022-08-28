@@ -14,10 +14,10 @@ function showDetailedData() {
     let div = document.createElement("div");
 
     let title = document.createElement("h1");
-    title.innerText = data.title;
+    title.innerText = data.Title;
 
     let description = document.createElement("p");
-    description.innerText = data.description;
+    description.innerText = data.Description;
 
     let source = document.createElement("a");
     source.href = data.source;

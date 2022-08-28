@@ -1,8 +1,6 @@
-// Navbar and scroll to top init
-import navbar from "../components/navbar.js"
-document.querySelector("#nav").innerHTML = navbar();
+
 //footer
-import footer from "../components/foot.js";
+import footer from "./components/foot.js";
 document.getElementById("footer").innerHTML=footer();
 
 

@@ -51,13 +51,13 @@ function showData(){
 
         function sendToDetails(){
             image = el.urlToImage;
-            title = el.title;
-            description = el.description;
+            Title = el.title;
+            Description = el.description;
             source = el.url;
             let obj={
                 image,
-                title,
-                description,
+                Title,
+                Description,
                 source
             }
             localStorage.setItem("sendToDetails",JSON.stringify(obj));

@@ -138,6 +138,7 @@
     background-color: white;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 #dropDownSec>ul {
@@ -178,4 +179,47 @@
     font: 17px;
     padding: 12px 5px;
     min-width: 200px;
+    z-index: 1;
+}
+
+/* user details */
+
+#profile{
+    position: relative;
+}
+
+#userDetails{
+    display: none;
+    position:absolute;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    border-radius: 10px;
+    right: -10%;
+    color: black;
+    z-index: 2;
+    padding: 10px;
+    width: 250px;
+    top: 105%;
+    cursor:default;
+}
+
+#userDetails>h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#userDetails>button{
+    background-color: #a00606;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#userDetails>button:hover{
+    box-shadow: 0px 0px 10px 0px grey;
+    cursor: pointer;
 }

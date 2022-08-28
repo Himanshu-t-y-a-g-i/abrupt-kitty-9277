@@ -196,16 +196,25 @@ let getData = async (url) => {
 
 // for showing data on page
 let appendData = (data, cont) => {
-  data.forEach(({ urlToImage, title, content, description }) => {
+  data.forEach(({ urlToImage, title, content, description,url }) => {
     // content part
     let img = document.createElement("img");
     img.src = urlToImage;
+    img.addEventListener("click",()=>{
+      sendToDetails();
+  })
 
     let h2 = document.createElement("h2");
     h2.innerText = title;
+    h2.addEventListener("click",()=>{
+      sendToDetails();
+  })
 
     let p = document.createElement("p");
     p.innerText = description;
+    p.addEventListener("click",()=>{
+      sendToDetails();
+  })
 
     // data storing and appending part
     let head_div = document.createElement("div");
@@ -235,6 +244,21 @@ let appendData = (data, cont) => {
     sub_news.append(img_div, content_div);
     // main news_div
     cont.append(sub_news);
+
+    function sendToDetails(){
+      let image = urlToImage;
+      let Title = title;
+      let Description = description;
+      let source = url;
+      let obj={
+          image,
+          Title,
+          Description,
+          source
+      }
+      localStorage.setItem("sendToDetails",JSON.stringify(obj));
+      window.location.href="./details.html";
+  }
   });
 };
 
