@@ -1,11 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="icon" href="./images/cirlce favi-icon.png" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/india_page.css" />
@@ -20,90 +19,113 @@
       <div class="h_first">
         <h1>Business</h1>
       </div>
-      <!-- main news div -->
-      <div class="news_div">
-        <div class="sub_news">1</div>
-        <div class="sub_news">2</div>
-        <div class="sub_news">3</div>
-      </div>
-      <!-- Side  news div -->
-      <div class="child_div">
-        <div class="span">
-          <div><span>READ THIS</span></div>
-          <div></div>
+      <!-- main news container where data appending -->
+      <div id="container">
+        <!-- main news div -->
+        <div class="news_div" id="main_news">
+          <!-- appending all news data here -->
         </div>
-        <div class="side_div">1</div>
-        <div class="side_div">2</div>
-        <div class="side_div">3</div>
-        <div class="side_div">4</div>
       </div>
     </div>
-    <!-- footer section -->
+    <!-- side news container -->
+    <div id="side_container">
+      <!-- side news html getting from import export -->
+    </div>
+    <div id="buttons">
+      <!-- appending buttons here -->
+    </div>
+    <div id="foot_2"></div>
     <div id="footer"></div>
   </body>
 </html>
-<script src="./scripts/world.js" type="module">
+<script src="./scripts/business.js" type="module"></script>
+<script type="module">
+  // Navbar and scroll to top init
+  import navbar from "./components/navbar.js";
+  document.querySelector("#nav").innerHTML = navbar();
+
+  // footer section
+  import footer from "./components/foot.js";
+  document.getElementById("footer").innerHTML = footer();
+
+  // scroll bar section
   let scroller = document.getElementById("scrollToTop");
 
   let scrolled = () => {
-      let pos = document.documentElement.scrollTop;
-      let a = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      let b = Math.round((pos * 100) / a);
-      if (b > 15) {
-          scroller.style.display = "block";
-      } else {
-          scroller.style.display = "none";
-      }
-  }
+    let pos = document.documentElement.scrollTop;
+    let a =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let b = Math.round((pos * 100) / a);
+    if (b > 15) {
+      scroller.style.display = "block";
+    } else {
+      scroller.style.display = "none";
+    }
+  };
 
   window.addEventListener("scroll", () => {
-      scrolled();
-  })
+    scrolled();
+  });
 
   window.addEventListener("load", () => {
-      scrolled();
-  })
+    scrolled();
+  });
 
   let scrollTop = () => {
-      window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth"
-      });
-  }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   document.querySelector("#scrollToTop").addEventListener("click", () => {
-      scrollTop();
-  })
+    scrollTop();
+  });
 
   // main menu drop down
 
   let showDropDown = () => {
-      let dropDown = document.getElementById("dropDownSec");
-      dropDown.style.display = "flex";
-  }
+    let dropDown = document.getElementById("dropDownSec");
+    dropDown.style.display = "flex";
+  };
 
   let hideDropDown = () => {
-      let dropDown = document.getElementById("dropDownSec");
-      dropDown.style.display = "none";
-  }
+    let dropDown = document.getElementById("dropDownSec");
+    dropDown.style.display = "none";
+  };
 
-  document.getElementById("dropDown").addEventListener("click",() => {
-      showDropDown();
-  })
+  document.getElementById("dropDown").addEventListener("click", () => {
+    showDropDown();
+  });
 
-  document.getElementById("dropDown").addEventListener("dblclick",() => {
-      hideDropDown();
-  })
+  document.getElementById("dropDown").addEventListener("dblclick", () => {
+    hideDropDown();
+  });
 
   // search functionality
   let search = document.getElementById("search");
 
-  let submitted = () => {
-      console.log("submitted");
-  }
+  let submitted = async (query) => {
+    try {
+      let key = "3a2ea667e2344d5e9ba3e7f0a7a25feb";
+      let res = await fetch(
+        `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${key}`
+      );
+      let data = await res.json();
+      let result = data.articles;
+      localStorage.setItem("searchData", JSON.stringify(result));
+      window.location.href = "./search.html";
+    } catch (error) {
+      console.log("Error: ", error);
+    }
+  };
 
-  search.addEventListener("search",()=>{
-      submitted();
-  })
+  search.addEventListener("search", () => {
+    let query = search.value;
+    console.log("Successful");
+    submitted(query);
+  });
+  // navbar and scroll to top end
 </script>

@@ -46,17 +46,17 @@ let img123=document.querySelector(".img2");
 let img1=document.createElement('img')
 let img2=document.createElement('img')
 let img3=document.createElement('img')
-img1.src=data[data.length-1].urlToImage;
+img1.src=data[1].urlToImage;
 let h=document.createElement("h2");
-h.innerText=data[data.length-1].title
+h.innerText=data[1].title
 h.style.color="white"
-img2.src=data[5].urlToImage;
+img2.src=data[4].urlToImage;
 let h1=document.createElement("h4");
-h1.innerText=data[5].title
+h1.innerText=data[4].title
 h1.style.color="white"
-img3.src=data[7].urlToImage;
+img3.src=data[9].urlToImage;
 let h2=document.createElement("h4");
-h2.innerText=data[7].title
+h2.innerText=data[9].title
 h2.style.color="white"
 
 
