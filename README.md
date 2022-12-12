@@ -1,7 +1,8 @@
 # abrupt-kitty-9277
 Group project... Indiatoday.in
-# abrupt-kitty-9277
-About
+<h1>About</h1>
+
+
 India Today is a 24-hour English language television network based in Noida, Uttar Pradesh that carries news, current affairs and business programming in India. The channel is owned by TV Today Network Ltd, which is a part of Living Media. India Today and its brother channel Aaj Tak has won numerous awards over the years at the Indian Television Academy (ITA) Awards,[13] and the Exchange4media News Broadcasting (ENBA) Awards.
 
 
@@ -42,5 +43,8 @@ Github to used for version control.
 
 ## Deployed Link
 
-[![deployed link](https://img.shields.io/badge/Deployed_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)]([https://verdant-basbousa-61164e.netlify.app/](https://fanciful-nasturtium-be8334.netlify.app/))
+[![deployed link](https://img.shields.io/badge/Deployed_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)
+
+
+https://verdant-basbousa-61164e.netlify.app/](https://fanciful-nasturtium-be8334.netlify.app/
 
