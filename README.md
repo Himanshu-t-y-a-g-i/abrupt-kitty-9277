@@ -46,5 +46,5 @@ Github to used for version control.
 [![deployed link](https://img.shields.io/badge/Deployed_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)
 
 
-https://verdant-basbousa-61164e.netlify.app/](https://fanciful-nasturtium-be8334.netlify.app/
+https://Indiatoday-clone.netlify.app/
 
